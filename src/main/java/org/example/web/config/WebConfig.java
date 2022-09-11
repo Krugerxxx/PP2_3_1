@@ -1,4 +1,4 @@
-package web.config;
+package org.example.web.config;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +13,7 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("web")
+@ComponentScan("org.example.web")
 public class WebConfig implements WebMvcConfigurer {
     private final ApplicationContext applicationContext;
 
@@ -36,7 +36,7 @@ public class WebConfig implements WebMvcConfigurer {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
         templateEngine.setEnableSpringELCompiler(true);
-        return templateEngine();
+        return templateEngine;
     }
 
     @Override

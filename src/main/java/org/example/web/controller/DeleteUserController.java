@@ -3,21 +3,19 @@ package org.example.web.controller;
 import org.example.web.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/users")
-public class UserController {
-
+public class DeleteUserController {
     @Autowired
-    private UserService userService;
+    UserService userService;
 
-    @GetMapping()
-    public String welcome(Model model) {
-        model.addAttribute("userslist", userService.listAll());
-        return "users/users";
+    @RequestMapping(value = "/delete_user{id}")
+    public String deleteUser(@PathVariable(value = "id") Long id) {
+        userService.deleteUser(id);
+        return "redirect:/users";
     }
 
 }

@@ -1,5 +1,7 @@
 package org.example.web.models;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 import javax.validation.constraints.*;
 

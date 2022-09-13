@@ -19,8 +19,8 @@ public class NewUserController {
     private UserService userService;
 
     @RequestMapping(value = "/new_user", method = RequestMethod.GET)
-    public String newUserForm(Model model) {
-        model.addAttribute("newuser", new User());
+    public String newUserForm(Model model, User user) {
+        model.addAttribute("newuser", user);
         return "users/new_user";
     }
 

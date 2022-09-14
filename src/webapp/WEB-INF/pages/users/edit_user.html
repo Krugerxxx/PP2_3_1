@@ -9,7 +9,7 @@
 <body>
 <div align="center">
     <h3>Изменить пользователя</h3>
-    <form action="save" th:action="@{/users/edit_user{id} (id=${edituser.getId()})}" th:object="${edituser}"
+    <form th:action="@{/users/edit_user{id} (id=${edituser.getId()})}" th:object="${edituser}"
           method="post">
         <table border="0" cellpadding="5">
             <tr>

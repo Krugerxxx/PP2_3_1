@@ -1,7 +1,6 @@
 package org.example.web.service;
 
 import org.example.web.dao.UserDao;
-import org.example.web.dao.UserDaoSpringDataImpl;
 import org.example.web.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

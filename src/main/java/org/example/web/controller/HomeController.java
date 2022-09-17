@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
-    @Value("${spring.application.name}")
-    String appName;
 
     @GetMapping(value = "/")
     public String home() {

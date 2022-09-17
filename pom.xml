@@ -21,11 +21,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>5.3.14</spring.version>
         <spring-boot.version>2.7.3</spring-boot.version>
         <hibernate-core.version>5.6.3.Final</hibernate-core.version>
         <mysql-connector-java.version>8.0.25</mysql-connector-java.version>
-        <thymeleaf-spring5.version>3.0.14.RELEASE</thymeleaf-spring5.version>
     </properties>
 
     <dependencies>

@@ -5,7 +5,7 @@ import org.example.web.models.User;
 import java.util.List;
 
 public interface UserDao {
-    void save(User user);
+    User save(User user);
 
     void update(User user);
 
